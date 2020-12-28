@@ -14,6 +14,8 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":archon-api"))
+
     val changing = Action<ExternalModuleDependency> { isChanging = true }
     compileOnly("br.com.devsrsouza.kotlinbukkitapi:core:0.2.0-SNAPSHOT", changing)
     compileOnly("br.com.devsrsouza.kotlinbukkitapi:serialization:0.2.0-SNAPSHOT", changing)
